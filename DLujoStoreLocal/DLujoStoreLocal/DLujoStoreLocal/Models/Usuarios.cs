@@ -1,0 +1,27 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace DLujoStoreLocal.Models
+{
+
+    [Serializable]
+    public class Usuarios
+    {
+
+        public string correo;
+        public string contrasenia;
+
+        public bool autenticacion( string email, string pass ) {
+
+            if (correo == email && contrasenia == pass) { 
+            
+                return true;
+                
+            }
+        
+            return false;
+        }
+
+    }
+}
