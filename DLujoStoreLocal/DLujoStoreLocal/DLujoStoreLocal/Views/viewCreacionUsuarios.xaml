@@ -10,7 +10,7 @@
     </ContentPage.BindingContext>
     
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout  VerticalOptions="CenterAndExpand" Padding="30">
             
             <Entry  Text="{Binding CorreoElectronico}" Placeholder="Correo Electrónico" Keyboard="Email" Margin="0,0,0,10" />
             <Entry  Text="{Binding Contrasenia}" Placeholder="Contraseña" IsPassword="True" Margin="0,0,0,20" />

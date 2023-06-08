@@ -66,7 +66,18 @@ namespace DLujoStoreLocal.ViewModels
 
         string ruta = Path.Combine(System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal), "usuario.bin");
 
-        Usuarios u = new Usuarios();
+        Usuarios u;
+
+        public Usuarios U
+        {
+            get => u;
+            set
+            {
+                u = value;
+                OnPropertyChanged(nameof(U));
+            }
+        }
+
 
         string correoElectronico;
 

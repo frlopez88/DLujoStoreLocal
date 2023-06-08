@@ -23,5 +23,11 @@ namespace DLujoStoreLocal.Models
             return false;
         }
 
+        public override string ToString() {
+
+            return $" {correo} - {contrasenia} ";
+
+        }
+
     }
 }

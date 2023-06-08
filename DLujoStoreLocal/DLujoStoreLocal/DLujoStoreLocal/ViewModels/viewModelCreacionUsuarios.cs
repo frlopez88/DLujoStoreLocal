@@ -36,9 +36,13 @@ namespace DLujoStoreLocal.ViewModels
                 memory.Close();
 
                 File.WriteAllBytes(ruta, serializedData);
-                  
+
                 // Pop Async es para Regresar
-                Application.Current.MainPage.Navigation.PopAsync();
+                //Application.Current.MainPage.Navigation.PopAsync();
+
+                var pagina = new MainPage();
+
+                Application.Current.MainPage.Navigation.PushAsync(pagina);
 
 
             });

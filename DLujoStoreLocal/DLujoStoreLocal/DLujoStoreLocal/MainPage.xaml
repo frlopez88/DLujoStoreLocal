@@ -21,6 +21,7 @@
 
             <Label Text="{Binding ResultadoAuth}" ></Label>
 
+            <Label Text="{Binding U }" ></Label>
         
         </StackLayout>
 

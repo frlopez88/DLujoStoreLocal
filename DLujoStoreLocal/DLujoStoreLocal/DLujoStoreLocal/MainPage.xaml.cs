@@ -14,5 +14,13 @@ namespace DLujoStoreLocal
         {
             InitializeComponent();
         }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+
+            // Realiza aquí cualquier acción necesaria para refrescar la vista
+            // Puede ser actualizar datos, cargar información, etc.
+        }
     }
 }
